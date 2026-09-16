@@ -164,12 +164,6 @@ button {
 	transform: scale(1.05);
 }
 
-/* SECTION */
-
-.section {
-	padding: 64px 0;
-}
-
 /* HERO */
 
 .hero {
@@ -191,4 +185,51 @@ button {
 	font-size: 1.125rem;
 	color: var(--color-muted);
 	margin-bottom: 32px;
+}
+
+/* SECTION */
+
+.section {
+	padding: 64px 0;
+}
+
+.section:nth-of-type(even) {
+	background-color: var(--color-surface);
+}
+
+.section__title {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--color-text);
+}
+
+.section__text {
+	max-width: 720px;
+	color: var(--color-text);
+}
+
+/* ABOUT */
+#about .section__text {
+	font-size: 1.05rem;
+	line-height: 1.7;
+	max-width: 780px;
+}
+
+#about .section__title {
+	position: relative;
+	padding-bottom: 10px;
+}
+
+#about .section__title::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 48px;
+	height: 3px;
+	background-color: var(--color-accent);
 }
