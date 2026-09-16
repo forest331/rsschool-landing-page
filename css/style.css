@@ -56,6 +56,32 @@ button {
 	padding: 0 20px;
 }
 
+/* BUTTONS */
+
+.btn {
+	display: inline-block;
+	padding: 12px 28px;
+	border-radius: 8px;
+	font-weight: 600;
+	font-size: 0.95rem;
+	border: none;
+	text-decoration: none;
+	transition:
+		background-color 0.2s ease,
+		transform 0.2s ease;
+}
+
+.btn--primary {
+	background-color: var(--color-accent);
+	color: #ffffff;
+}
+
+.btn--primary:hover {
+	background-color: var(--color-accent-hover);
+	color: #ffffff;
+	transform: translateY(-2px);
+}
+
 /* HEADER */
 
 .header {
@@ -136,4 +162,33 @@ button {
 .theme-toggle:hover {
 	background-color: var(--color-surface);
 	transform: scale(1.05);
+}
+
+/* SECTION */
+
+.section {
+	padding: 64px 0;
+}
+
+/* HERO */
+
+.hero {
+	padding: 96px 0;
+	text-align: center;
+	background-color: var(--color-bg);
+}
+
+.hero__title {
+	font-family: 'Oswald', sans-serif;
+	font-size: clamp(2rem, 5vw, 3.5rem);
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	margin-bottom: 16px;
+	color: var(--color-text);
+}
+
+.hero__subtitle {
+	font-size: 1.125rem;
+	color: var(--color-muted);
+	margin-bottom: 32px;
 }
