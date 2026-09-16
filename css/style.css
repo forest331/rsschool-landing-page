@@ -409,3 +409,12 @@ button {
 	font-size: 0.9rem;
 	color: var(--color-muted);
 }
+
+/* CONTACT */
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	color: var(--color-text);
+}
