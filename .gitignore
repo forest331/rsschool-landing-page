@@ -1,0 +1,21 @@
+text
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cache
+.cache/
