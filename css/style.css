@@ -233,3 +233,39 @@ button {
 	height: 3px;
 	background-color: var(--color-accent);
 }
+
+/* SERVICES */
+
+.services {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 24px;
+}
+
+.service-card {
+	background-color: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: 12px;
+	padding: 24px;
+	box-shadow: var(--shadow-sm);
+	transition:
+		transform 0.25s ease,
+		box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--shadow-md);
+}
+
+.service-card h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.25rem;
+	margin-bottom: 8px;
+	color: var(--color-text);
+}
+
+.service-card p {
+	color: var(--color-muted);
+	font-size: 0.95rem;
+}
