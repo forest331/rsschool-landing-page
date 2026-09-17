@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Catalog of tattoo works by a_tattoowork — graphics, whip shading, minimalism."
+		/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23e63946'/><text x='50%' y='54%' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-size='34' font-weight='700' fill='%23ffffff'>a</text></svg>"
+		/>
+		<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/themes.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Catalog — a_tattoowork</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__inner">
+				<a href="index.html" class="logo">a_tattoowork</a>
+
+				<nav class="nav" id="nav">
+					<ul class="nav__list">
+						<li><a href="index.html#about" class="nav__link">About</a></li>
+						<li>
+							<a href="index.html#services" class="nav__link">Services</a>
+						</li>
+						<li>
+							<a href="index.html#portfolio" class="nav__link">Portfolio</a>
+						</li>
+						<li><a href="index.html#masters" class="nav__link">Masters</a></li>
+						<li>
+							<a href="catalog.html" class="nav__link nav__link--active"
+								>Catalog</a
+							>
+						</li>
+						<li><a href="index.html#contact" class="nav__link">Contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__actions">
+					<button
+						class="theme-toggle"
+						id="themeToggle"
+						type="button"
+						aria-label="Toggle theme"
+					>
+						<span class="theme-toggle__icon">☀</span>
+					</button>
+					<button
+						class="burger"
+						id="burger"
+						type="button"
+						aria-label="Open menu"
+					>
+						<span></span><span></span><span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="section">
+				<div class="container">
+					<h1 class="section__title">Catalog</h1>
+
+					<ul class="categories" id="categories">
+						<li>
+							<button
+								class="category category--active"
+								data-category="all"
+								type="button"
+							>
+								All
+							</button>
+						</li>
+						<li>
+							<button class="category" data-category="graphics" type="button">
+								Графика
+							</button>
+						</li>
+						<li>
+							<button class="category" data-category="whip" type="button">
+								Випшейдинг
+							</button>
+						</li>
+						<li>
+							<button class="category" data-category="minimalism" type="button">
+								Минимализм
+							</button>
+						</li>
+						<li>
+							<button class="category" data-category="lettering" type="button">
+								Леттеринг
+							</button>
+						</li>
+					</ul>
+
+					<!-- Карточки -->
+					<ul class="cards" id="cards">
+						<li class="card" data-category="graphics">
+							<img
+								class="card__image"
+								src="assets/images/portfolio/work-1.jpg"
+								alt="Graphic sleeve tattoo"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 class="card__title">Graphic sleeve</h3>
+								<p class="card__desc">Blackwork sleeve in graphics style.</p>
+								<p class="card__meta">Графика · от 250 BYN</p>
+							</div>
+						</li>
+						<li class="card" data-category="whip">
+							<img
+								class="card__image"
+								src="assets/images/portfolio/work-2.jpg"
+								alt="Whip shading portrait"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 class="card__title">Soft shading</h3>
+								<p class="card__desc">Whip shading portrait, forearm.</p>
+								<p class="card__meta">Випшейдинг · от 200 BYN</p>
+							</div>
+						</li>
+						<li class="card" data-category="minimalism">
+							<img
+								class="card__image"
+								src="assets/images/portfolio/work-3.jpg"
+								alt="Minimalist line tattoo"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 class="card__title">Thin line</h3>
+								<p class="card__desc">Minimalist thin-line tattoo.</p>
+								<p class="card__meta">Минимализм · от 120 BYN</p>
+							</div>
+						</li>
+						<li class="card" data-category="lettering">
+							<img
+								class="card__image"
+								src="assets/images/portfolio/work-4.jpg"
+								alt="Lettering tattoo"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 class="card__title">Script lettering</h3>
+								<p class="card__desc">Custom script lettering.</p>
+								<p class="card__meta">Леттеринг · от 150 BYN</p>
+							</div>
+						</li>
+						<li class="card" data-category="graphics">
+							<img
+								class="card__image"
+								src="assets/images/portfolio/work-5.jpg"
+								alt="Blackwork ornamental tattoo"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 class="card__title">Ornamental</h3>
+								<p class="card__desc">Blackwork ornamental pattern.</p>
+								<p class="card__meta">Графика · от 220 BYN</p>
+							</div>
+						</li>
+						<li class="card" data-category="whip">
+							<img
+								class="card__image"
+								src="assets/images/portfolio/work-6.jpg"
+								alt="Whip shading animal tattoo"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 class="card__title">Animal shading</h3>
+								<p class="card__desc">Whip shading animal portrait.</p>
+								<p class="card__meta">Випшейдинг · от 280 BYN</p>
+							</div>
+						</li>
+						<li class="card" data-category="minimalism">
+							<img
+								class="card__image"
+								src="assets/images/portfolio/work-7.jpg"
+								alt="Minimalist symbol tattoo"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 class="card__title">Symbol</h3>
+								<p class="card__desc">Minimalist symbol tattoo.</p>
+								<p class="card__meta">Минимализм · от 100 BYN</p>
+							</div>
+						</li>
+						<li class="card" data-category="lettering">
+							<img
+								class="card__image"
+								src="assets/images/portfolio/work-8.jpg"
+								alt="Gothic lettering tattoo"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h3 class="card__title">Gothic script</h3>
+								<p class="card__desc">Gothic lettering on forearm.</p>
+								<p class="card__meta">Леттеринг · от 180 BYN</p>
+							</div>
+						</li>
+					</ul>
+
+					<!-- Кнопка "Показать ещё" -->
+					<button
+						class="btn btn--primary cards__more"
+						type="button"
+						id="showMore"
+					>
+						Показать ещё
+					</button>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container footer__inner">
+				<div class="footer__col">
+					<p class="footer__brand">a_tattoowork</p>
+					<p class="footer__year">© 2026</p>
+				</div>
+
+				<div class="footer__col">
+					<p class="footer__heading">Contact</p>
+					<ul class="footer__list">
+						<li><a href="tel:+375291234567">+375 (29) 123-45-67</a></li>
+						<li>
+							<a href="mailto:andrey.gevrasyow@gmail.com"
+								>andrey.gevrasyow@gmail.com</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__col">
+					<p class="footer__heading">Social</p>
+					<ul class="footer__list">
+						<li>
+							<a href="https://t.me/Forest3377" target="_blank" rel="noopener"
+								>Telegram</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://github.com/forest331"
+								target="_blank"
+								rel="noopener"
+								>GitHub</a
+							>
+						</li>
+						<li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+					</ul>
+				</div>
+
+				<a
+					class="footer__logo"
+					href="https://rs.school/js/"
+					target="_blank"
+					rel="noopener"
+				>
+					<img
+						src="assets/icons/rs-school-logo.svg"
+						alt="RS School"
+						width="90"
+						height="30"
+					/>
+				</a>
+			</div>
+		</footer>
+	</body>
+</html>
