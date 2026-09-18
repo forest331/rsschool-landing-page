@@ -666,4 +666,8 @@ button {
 	.footer__list {
 		align-items: center;
 	}
+
+	.footer__logo {
+		justify-self: center;
+	}
 }
