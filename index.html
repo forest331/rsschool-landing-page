@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Tattoo studio a_tattoowork — graphics, whip shading, minimalism and more."
+		/>
+		<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/themes.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>a_tattoowork — Tattoo Studio</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__inner">
+				<a href="index.html" class="logo">a_tattoowork</a>
+
+				<nav class="nav" id="nav">
+					<ul class="nav__list">
+						<li><a href="#about" class="nav__link">About</a></li>
+						<li><a href="#services" class="nav__link">Services</a></li>
+						<li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+						<li><a href="#masters" class="nav__link">Masters</a></li>
+						<li><a href="catalog.html" class="nav__link">Catalog</a></li>
+						<li><a href="#contact" class="nav__link">Contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__actions">
+					<button
+						class="theme-toggle"
+						id="themeToggle"
+						type="button"
+						aria-label="Toggle theme"
+					>
+						<span class="theme-toggle__icon">☀</span>
+					</button>
+					<button
+						class="burger"
+						id="burger"
+						type="button"
+						aria-label="Open menu"
+					>
+						<span></span><span></span><span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="hero" id="hero">
+				<div class="container">
+					<h1 class="hero__title">Ink that tells your story</h1>
+					<p class="hero__subtitle">
+						Custom tattoo design — graphics, whip shading and minimalism.
+					</p>
+					<a href="catalog.html" class="btn btn--primary">View portfolio</a>
+				</div>
+			</section>
+			<section class="section" id="about">
+				<div class="container">
+					<h2 class="section__title">About</h2>
+					<p class="section__text">
+						a_tattoowork — a personal tattoo studio focused on clean, custom
+						work. Every piece is designed individually, based on your idea and
+						anatomy. I work with graphics, whip shading and minimalism.
+					</p>
+				</div>
+			</section>
+			<section class="section" id="services">
+				<div class="container">
+					<h2 class="section__title">Services</h2>
+					<ul class="services">
+						<li class="service-card">
+							<h3>Тату</h3>
+							<p>Custom tattoo design from scratch, based on your idea.</p>
+						</li>
+						<li class="service-card">
+							<h3>Перекрытие</h3>
+							<p>Cover-up of old or unsuccessful tattoos with a new design.</p>
+						</li>
+						<li class="service-card">
+							<h3>Коррекция</h3>
+							<p>Refresh and fix existing tattoos — lines, color, shape.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section" id="portfolio">
+				<div class="container">
+					<h2 class="section__title">Portfolio</h2>
+
+					<div class="slider" id="slider">
+						<div class="slider__viewport">
+							<ul class="slider__track" id="sliderTrack">
+								<li class="slider__slide">
+									<img
+										src="assets/images/portfolio/work-1.jpg"
+										alt="Graphics blackwork tattoo"
+										loading="lazy"
+									/>
+									<p class="slider__caption">Графика — blackwork</p>
+								</li>
+								<li class="slider__slide">
+									<img
+										src="assets/images/portfolio/work-2.jpg"
+										alt="Whip shading tattoo"
+										loading="lazy"
+									/>
+									<p class="slider__caption">Випшейдинг</p>
+								</li>
+								<li class="slider__slide">
+									<img
+										src="assets/images/portfolio/work-3.jpg"
+										alt="Minimalist tattoo"
+										loading="lazy"
+									/>
+									<p class="slider__caption">Минимализм</p>
+								</li>
+
+								<li class="slider__slide">
+									<img
+										src="assets/images/portfolio/work-4.jpg"
+										alt="Lettering + realism tattoo"
+										loading="lazy"
+									/>
+									<p class="slider__caption">Lettering + realism</p>
+								</li>
+							</ul>
+						</div>
+
+						<button
+							class="slider__btn slider__btn--prev"
+							type="button"
+							aria-label="Previous slide"
+						>
+							‹
+						</button>
+						<button
+							class="slider__btn slider__btn--next"
+							type="button"
+							aria-label="Next slide"
+						>
+							›
+						</button>
+
+						<ul class="slider__dots" id="sliderDots">
+							<li>
+								<button
+									class="slider__dot slider__dot--active"
+									type="button"
+									aria-label="Go to slide 1"
+								></button>
+							</li>
+							<li>
+								<button
+									class="slider__dot"
+									type="button"
+									aria-label="Go to slide 2"
+								></button>
+							</li>
+							<li>
+								<button
+									class="slider__dot"
+									type="button"
+									aria-label="Go to slide 3"
+								></button>
+							</li>
+
+							<li>
+								<button
+									class="slider__dot"
+									type="button"
+									aria-label="Go to slide 4"
+								></button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section" id="masters">
+				<div class="container">
+					<h2 class="section__title">Masters</h2>
+					<ul class="masters">
+						<li class="master-card">
+							<img
+								src="assets/images/masters/master-1.avif"
+								alt="Emma — tattoo artist"
+								loading="lazy"
+							/>
+							<h3>Emma</h3>
+							<p>Graphics · Whip shading</p>
+						</li>
+						<li class="master-card">
+							<img
+								src="assets/images/masters/master-2.avif"
+								alt="Olivia master — minimalist"
+								loading="lazy"
+							/>
+							<h3>Olivia</h3>
+							<p>Minimalism · Lettering</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section" id="contact">
+				<div class="container">
+					<h2 class="section__title">Contact</h2>
+					<ul class="contacts">
+						<li>
+							<strong>Email:</strong>
+							<a href="mailto:andrey.gevrasyow@gmail.com"
+								>andrey.gevrasyow@gmail.com</a
+							>
+						</li>
+						<li>
+							<strong>Telegram:</strong>
+							<a href="https://t.me/Forest3377" target="_blank" rel="noopener"
+								>@Forest3377</a
+							>
+						</li>
+						<li>
+							<strong>Instagram:</strong>
+							<a href="#" target="_blank" rel="noopener">a_tattoowork</a>
+						</li>
+						<li>
+							<strong>Location:</strong>
+							<a
+								href="https://www.google.com/maps/search/?api=1&query=Mogilev,Belarus"
+								target="_blank"
+								rel="noopener"
+								>Mogilev, Belarus</a
+							>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container footer__inner">
+				<div class="footer__col">
+					<p class="footer__brand">a_tattoowork</p>
+					<p class="footer__year">© 2026</p>
+				</div>
+
+				<div class="footer__col">
+					<p class="footer__heading">Contact</p>
+					<ul class="footer__list">
+						<li><a href="tel:+375291234567">+375 (29) 123-45-67</a></li>
+						<li>
+							<a href="mailto:andrey.gevrasyow@gmail.com"
+								>andrey.gevrasyow@gmail.com</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__col">
+					<p class="footer__heading">Social</p>
+					<ul class="footer__list">
+						<li>
+							<a href="https://t.me/Forest3377" target="_blank" rel="noopener"
+								>Telegram</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://github.com/forest331"
+								target="_blank"
+								rel="noopener"
+								>GitHub</a
+							>
+						</li>
+						<li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+					</ul>
+				</div>
+
+				<a
+					class="footer__logo"
+					href="https://rs.school/js/"
+					target="_blank"
+					rel="noopener"
+				>
+					<img
+						src="assets/icons/rs-school-logo.svg"
+						alt="RS School"
+						width="90"
+						height="30"
+					/>
+				</a>
+			</div>
+		</footer>
+
+		<script src="js/theme.js"></script>
+	</body>
+</html>
