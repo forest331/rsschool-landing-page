@@ -168,8 +168,33 @@
 				</a>
 			</div>
 		</footer>
+		<div class="modal" id="modal" hidden>
+			<div class="modal__overlay" data-close="overlay"></div>
+			<div class="modal__content" role="dialog" aria-modal="true">
+				<button
+					class="modal__close"
+					type="button"
+					data-close="button"
+					aria-label="Close"
+				>
+					×
+				</button>
+				<img class="modal__image" id="modalImage" src="" alt="" />
+				<h3 class="modal__title" id="modalTitle"></h3>
+				<p class="modal__desc" id="modalDesc"></p>
+
+				<div class="modal__params" id="modalParams">
+					<!-- Параметры рендерятся через JS -->
+				</div>
+
+				<div class="modal__summary" id="modalSummary">
+					<!-- Сводка: цена, длительность -->
+				</div>
+			</div>
+		</div>
 		<script src="js/theme.js"></script>
 		<script type="module" src="js/data.js"></script>
 		<script type="module" src="js/catalog.js"></script>
+		<script type="module" src="js/modal.js"></script>
 	</body>
 </html>

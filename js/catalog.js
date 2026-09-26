@@ -1,7 +1,8 @@
 import { works } from './data.js'
+import { openModal } from './modal.js'
 
 const CARDS_INITIAL = 8
-const cardContainer = document.getElementById('cards')
+const cardsContainer = document.getElementById('cards')
 const categoriesContainer = document.getElementById('categories')
 const showMoreBtn = document.getElementById('showMore')
 
@@ -16,7 +17,7 @@ function renderCards() {
 
 	const visible = filtered.slice(0, visibleCount)
 
-	cardContainer.innerHTML = visible.map(createCardHTML).join('')
+	cardsContainer.innerHTML = visible.map(createCardHTML).join('')
 
 	if (showMoreBtn) {
 		if (visibleCount >= filtered.length) {
@@ -25,6 +26,36 @@ function renderCards() {
 			showMoreBtn.hidden = false
 		}
 	}
+}
+
+if (cardsContainer) {
+	cardsContainer.addEventListener('click', e => {
+		const card = e.target.closest('.card')
+		if (!card) return
+
+		const id = card.dataset.id
+		const work = works.find(w => w.id == id)
+
+		if (work) openModal(work)
+	})
+}
+
+function createCardHTML(work) {
+	return `
+ 	<li class="card" data-id="${work.id}">
+							<img
+								class="card__image"
+								src="${work.image}"
+								alt="${work.title}"
+								loading="lazy"
+							/>
+							<div class="card__body">
+								<h2 class="card__title">${work.title}</h2>
+								<p class="card__desc">${work.shortDesc}</p>
+								<p class="card__meta">${work.basePrice} BYN</p>
+							</div>
+						</li>
+ `
 }
 
 if (categoriesContainer) {
@@ -44,23 +75,6 @@ if (categoriesContainer) {
 		renderCards()
 	})
 }
-function createCardHTML(work) {
-	return `
- 	<li class="card" data-id="${work.id}">
-							<img
-								class="card__image"
-								src="${work.image}"
-								alt="${work.title}"
-								loading="lazy"
-							/>
-							<div class="card__body">
-								<h2 class="card__title">${work.title}</h2>
-								<p class="card__desc">${work.shortDesc}</p>
-								<p class="card__meta">${work.basePrice} BYN</p>
-							</div>
-						</li>
- `
-}
 
 if (showMoreBtn) {
 	showMoreBtn.addEventListener('click', () => {
@@ -68,4 +82,5 @@ if (showMoreBtn) {
 		renderCards()
 	})
 }
+
 renderCards()
