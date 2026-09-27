@@ -1,7 +1,7 @@
 import { works } from './data.js'
 import { openModal } from './modal.js'
 
-const CARDS_INITIAL = 8
+const CARDS_INITIAL = 6
 const cardsContainer = document.getElementById('cards')
 const categoriesContainer = document.getElementById('categories')
 const showMoreBtn = document.getElementById('showMore')
