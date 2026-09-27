@@ -1,0 +1,24 @@
+{
+	"name": "rsschool-landing-page",
+	"version": "1.0.0",
+	"description": "Tattoo studio landing page — RS School task.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "browser-sync start --server --files \"*.html, css/*.css, js/*.js\" --browser \"google chrome\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/forest331/rsschool-landing-page.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/forest331/rsschool-landing-page/issues"
+	},
+	"homepage": "https://github.com/forest331/rsschool-landing-page#readme",
+	"devDependencies": {
+		"browser-sync": "^3.0.4"
+	}
+}

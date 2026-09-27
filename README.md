@@ -1,18 +1,19 @@
-# rsschool-landing-page
+# RS School — Landing Page. Part 2: Functionality
 
-Tattoo studio landing page — RS School task.
+**Variant:** Authorial project (tattoo studio `a_tattoowork`).
+
+## 🎯 What was done
+
+- **Data:** `js/data.js` — array of 16 works with categories, sizes, placements
+- **Dynamic rendering:** all cards generated from data via JS
+- **Burger menu:** open/close, body scroll lock, closes on Escape / link / resize, works on both pages
+- **Slider:** cyclic navigation, dots, smooth animation
+- **Categories:** filtering without reload, only one active at a time
+- **Show more:** appears only when category has hidden cards
+- **Modal:** opens on card click, closes on Escape / overlay / close button, no close on inner click
+- **Params:** size + placement, dynamic price and duration update without reload
 
 ## 🔗 Live Demo
 
-https://forest331.github.io/rsschool-landing-page/
-
-## 📄 Pages
-
-- [Home](https://forest331.github.io/rsschool-landing-page/) — main page
-- [Catalog](https://forest331.github.io/rsschool-landing-page/catalog.html) — catalog with categories and cards
-
-## 🛠 Tech Stack
-
-- HTML5 (semantic)
-- CSS3 (custom properties, responsive design)
-- Vanilla JavaScript (theme switcher with localStorage)
+- Home: https://forest331.github.io/rsschool-landing-page/
+- Catalog: https://forest331.github.io/rsschool-landing-page/catalog.html
